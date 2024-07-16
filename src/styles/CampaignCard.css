@@ -1,0 +1,54 @@
+/* styles/CampaignCard.css */
+
+.campaigns {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* display: flex; */
+  /* justify-content: center; */
+  /* position: relative; */
+  /* left: 6%; */
+  /* flex-wrap: wrap; */
+}
+
+.campaign-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  flex: 1;
+}
+
+.campaign-card.active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.resumes, .status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.expContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resumeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
